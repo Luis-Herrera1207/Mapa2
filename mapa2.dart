@@ -9,25 +9,25 @@ void main() {
         'telefono': '656-123-4567',
         'correo': "juan@gmail.com",
         'edad': 16,
-        'sexo': 'Masculino',
-    };
-    //Imprime el mapa en orden
-    print(cliente);
-    //Imprime el valor de la llave nombre
-    print(cliente['id_cliente']);
-    //Imprime el valor de la llave nombre
-    print(cliente['nombre']);
-    //Imprime el valor de la llave direccion
-    print(cliente['direccion']);
-    //Imprime el valor de la llave telefono
-    print(cliente['telefono']);
-    //Imprime el valor de la llave correo
-    print(cliente['correo']);
-    //Imprime el valor de la llave edad
-    print(cliente['edad']);
-    //Imprime el valor de la llave sexo
-    print(cliente['sexo']);
+        'sexo': 'Masculino',};
+        
+        print("ciclo for each");
+        print(" ");
+        cliente.forEach((key, value) {
+            print('$key: $value');
+        });
+
+        print(" ");
+
+        print("ciclo for in");
+        print(" ");
+        for (var key in cliente.keys) {
+            print('$key: ${cliente[key]}');
+        }
+
      //crea un mapa <string,dynamic> Con una tabla llamada empleado
+     print("TABLA EMPLEADO");
+     print(" ");
      Map<String, dynamic> empleado = {
         'id_empleado': '854',
         'nombre': 'pedro',
@@ -37,22 +37,19 @@ void main() {
         'edad': 16,
         'sexo': 'Masculino',};
 
-print(" ");
-print("TABLA EMPLEADO");
-    //Imprime el mapa en orden
-    print(empleado);
-    //Imprime el valor de la llave nombre
-    print(empleado['id_empleado']);
-    //Imprime el valor de la llave nombre
-    print(empleado['nombre']);
-    //Imprime el valor de la llave direccion
-    print(empleado['direccion']);
-    //Imprime el valor de la llave telefono
-    print(empleado['telefono']);
-    //Imprime el valor de la llave salario
-    print(empleado['salario']);
-    //Imprime el valor de la llave edad
-    print(empleado['edad']);
-    //Imprime el valor de la llave sexo
-    print(empleado['sexo']);
+        print("ciclo for each");
+        print(" ");
+        empleado.forEach((key, value) {
+            print('$key: $value');
+        });
+
+        print(" ");
+
+
+        print("ciclo for in");
+        print(" ");
+        for (var key in empleado.keys) {
+            print('$key: ${empleado[key]}');
+        }
+
 }
